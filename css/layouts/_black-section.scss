@@ -1,0 +1,51 @@
+.invest {
+    width: 50vw;
+    padding-left: 20%;
+    background-color: $dark-background;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+
+    @include mq(tablet) {
+        padding-left: 8.66%;
+    }
+
+    @include mq(mobile) {
+        padding-left: 20px;
+        padding-top: 3rem;
+    }
+
+    &::before {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &:hover {
+        background: url("https://www.bornfight.com/wp-content/uploads/2018/09/pvt-header_800x480_acf_cropped.jpg");
+        color: $white;
+    }
+
+    &:hover::before {
+        background-color: rgba(35, 9, 78, .7);
+        // back
+    }
+}
+
+.invest-second {
+    @extend .invest;
+    padding-left: 10%;
+
+    @include mq(mobile) {
+        padding-right: 20px;
+        padding-bottom: 3rem;
+        padding-left: 0%;
+    }
+    &:hover{
+        background: url('https://web.archive.org/web/20211011123614if_/https://www.bornfight.com/wp-content/uploads/2018/09/culture-full-1_800x480_acf_cropped.jpg');
+    }
+}

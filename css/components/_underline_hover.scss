@@ -1,0 +1,51 @@
+.expand {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    // max-width: 100%;
+}
+
+.expand:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px $primary;
+    transition: transform 250ms ease-in-out;
+    transform: scaleX(1);
+    transform-origin: 0;
+    top: 10px;
+}
+
+.expand:hover:after {
+    transform: scaleX(0);
+    transform-origin: 100%;
+}
+
+.expand-white {
+    @extend .expand;
+
+    &:after {
+        // @extend .expand:after;
+        border-bottom: solid 2px white;
+    }
+}
+
+.expand-opposite {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+
+    &::after {
+        display: block;
+        content: '';
+        border-bottom: solid 2px $primary;
+        transition: transform 250ms ease-in-out;
+        transform: scaleX(0);
+        transform-origin: 100%;
+        top: 10px;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: 0;
+    }
+}

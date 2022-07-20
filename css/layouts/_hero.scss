@@ -1,0 +1,23 @@
+.hero{
+    background-color: $primary;
+    padding-top: 80px;
+    min-height: calc(100vh - 80px);
+    padding-bottom: 100px;
+
+    @include mq(tablet){
+        padding-top: 14vh;
+    }
+    .heading-one{
+        color: $text-yellow;
+    }
+    .text-small{
+        color: $white;
+        margin: 40px 0 1.5em;
+        max-width: 420px;
+        padding-right: 30px;
+    }
+}
+
+.max-w-8{
+    max-width: 7em;
+}

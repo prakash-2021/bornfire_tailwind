@@ -1,0 +1,31 @@
+.wrapper {
+    width: 100%;
+    max-width: 88.88889%;
+    padding-left: 20.5%;
+    padding-right: 8.44444%;
+
+    @include mq(tablet) {
+        padding-left: 8.66%;
+        padding-right: 4.44444%;
+    }
+    @include mq(mobile) {
+        padding-left: 20px;
+        padding-right:20px;
+    }
+
+
+}
+
+.wrapper--fluid {
+    @extend .wrapper;
+    max-width: 100%;
+}
+
+.wrapper--right-zero {
+    @extend .wrapper--fluid;
+    padding-right: 0%;
+
+    @include mq(mobile){
+        padding-right: 20px;
+    }
+}

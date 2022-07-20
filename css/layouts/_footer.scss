@@ -1,0 +1,35 @@
+.footer__heading {
+    max-width: 500px;
+
+    @include mq(mobile) {
+        max-width: 16rem;
+    }
+}
+
+.btn__group {
+
+    span {
+        transition: .4s;
+        margin-left: 20px;
+    }
+
+    &:hover span {
+        margin-right: -10px;
+        margin-left: 30px;
+    }
+}
+
+.border-bottom {
+    border-bottom: 1px solid $primary-light;
+    padding-bottom: 60px;
+}
+
+.for-border {
+    border-bottom: 0px solid $primary-light;
+
+    @include mq(mobile) {
+        border-bottom: 1px solid $primary-light;
+        padding-bottom: 60px;
+    }
+
+}

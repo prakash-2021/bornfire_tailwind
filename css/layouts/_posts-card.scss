@@ -1,0 +1,88 @@
+.card {
+    width: 45%;
+    cursor: pointer;
+    color: $primary;
+
+    @include mq(mobile) {
+        width: 100%;
+    }
+
+    figure {
+        overflow: hidden;
+    }
+
+    &__img {
+        transition: 1s;
+    }
+
+    &__sub-heading {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        margin: 20px 0;
+        transition: .8s;
+
+        span {
+            margin-left: 10px;
+        }
+    }
+
+    &__description {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 300;
+        transition: .3s;
+
+        @include mq(mobile) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &:hover {
+        .card__img {
+            transform: scale(1.1);
+        }
+
+        .card__sub-heading {
+            margin-left: 17px;
+        }
+
+        .card__description {
+            margin-left: 17px;
+        }
+    }
+}
+
+
+
+
+// section help
+
+.help {
+    @include mq(tablet) {
+        padding: 20vh 0;
+    }
+
+    @include mq(mobile) {
+        padding: 3rem 0;
+    }
+
+    &__img {
+        width: 42.85%;
+
+        @include mq(mobile) {
+            width: 50%;
+        }
+    }
+
+    &__text {
+        width: 57%;
+        max-width: 600px;
+        padding: 2rem 0;
+
+        @include mq(mobile) {
+            width: 50%;
+        }
+    }
+}
