@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bornfight | Independent Venture Builder</title>
     <link rel="shortcut icon" href="./img/asset 2.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -47,15 +46,16 @@
                 <p class="text-extra-small rotated-text text-gray-600 hide hidden md:block">hello@bornfight.com</p>
             </div>
         </nav>
-        <button class="button--primary fixed right-14 z-50">START WITH US</button>
+        <a class="button--primary fixed right-14 z-50">
+            <span class="button--primary__span">START WITH US</span></a>
     </header>
 
 
     <!-- left navigation -->
     <section class="navigation" id="navigation">
+        <img src="./img/asset 1.svg" alt="" class="nav__logo">
         <div class="flex">
-            <div class="navigation__text">
-                <img src="./img/asset 1.svg" alt="" class="nav__logo">
+            <div class="navigation__text my-auto ">
                 <ul class="heading-four text-primary flex flex-col gap-8 ml-1 navigation__link">
                     <h4 class=""><span class="expand-opposite cursor-pointer"> Portfolio</span></h4>
                     <h4 class=""><span class="expand-opposite cursor-pointer"> Careers</span></h4>
@@ -64,13 +64,13 @@
                 <ul class="text-primary flex flex-col ml-3 navigation__link--small gap-4">
                     <p class=""><span class="expand-opposite cursor-pointer">Home</span></p>
                     <p class="">
-                        <sp48pxan class="expand-opposite cursor-pointer">What we do</sp48pxan>
+                        <span class="expand-opposite cursor-pointer">What we do</span>
                     </p>
                     <p class=""><span class="expand-opposite cursor-pointer">Subscribe to our newsletter</span></p>
                     <p class="flex gap-4"><span class="expand-opposite cursor-pointer">Start with us</span><img
                             src="./img/arrow-right-primary.svg" alt=""></p>
                 </ul>
-                <div class="text-sm text-primary ml-auto flex items-end flex-col pr-10 ">
+                <div class="text-sm text-primary phone-no">
                     <p class="mt-5 cursor-pointer mr-12">t: +38513333710</p>
                     <p class=" cursor-pointer">m: <span class="expand">hello@bornfight.com</span></p>
                 </div>
@@ -88,19 +88,18 @@
             <p class="text-small">Founding successful companies by combining great ideas with business expertise,
                 capital and technical execution.
             </p>
-            <button class="button--primary">EXPLORE OUR COMPANIES</button>
+            <a class="button--primary"><span class="button--primary__span">EXPLORE OUR COMPANIES</span></a>
         </div>
     </main>
 
     <!-- portfolio section -->
     <section class="bg-primary portfolio relative">
-        <div class="">
-            <div class="flex">
-                <div class="portfolio__text">
-                    <h2 class="heading-two text-white ">
-                        Venture portfolio</h2>
-
-                    <div class="box__height">
+        <div class="flex">
+            <ul class="portfolio__text">
+                <li class="box__height">
+                    <div>
+                        <h2 class="heading-two text-white ">
+                            Venture portfolio</h2>
                         <div class="cursor-pointer portfolio__box-text">
                             <p class="text-extra-small text-white mb-4 portfolio__number">01</p>
                             <h5 class="heading-five text-white">Comparing 40%+ of tech salaries though a community
@@ -114,52 +113,51 @@
                             </div>
                         </div>
                     </div>
+                </li>
 
-                    <div class="box__height">
-                        <div class="cursor-pointer portfolio__box-text">
-                            <p class="text-extra-small text-white mb-4 portfolio__number">02</p>
-                            <h5 class="heading-five text-white">Unlocking 30x revenue growth though continous platform
-                                improvement</h5>
-                            <p class="text-md font-bold text-white my-8 portfolio__tabu">Partnership <span
-                                    class="font-light">- Estird</span></p>
-                            <div class="arrow-btn arrow-btn--black">
-                                <img src="./img/arrow-right.svg" alt="">
-                            </div>
+                <li class="box__height">
+                    <div class="cursor-pointer portfolio__box-text">
+                        <p class="text-extra-small text-white mb-4 portfolio__number">02</p>
+                        <h5 class="heading-five text-white">Unlocking 30x revenue growth though continous
+                            platform
+                            improvement</h5>
+                        <p class="text-md font-bold text-white my-8 portfolio__tabu">Partnership <span
+                                class="font-light">- Estird</span></p>
+                        <div class="arrow-btn arrow-btn--black">
+                            <img src="./img/arrow-right.svg" alt="">
                         </div>
                     </div>
+                </li>
 
-                    <div class="box__height">
-                        <div class="cursor-pointer portfolio__box-text">
-                            <p class="text-extra-small text-white mb-4 portfolio__number">03</p>
-                            <h5 class="heading-five text-white">Building (r)evolution of gymnastics which secured a
-                                Є1.600.000 pre seed</h5>
-                            <p class="text-md font-bold text-white my-8 portfolio__tabu">Startup <span
-                                    class="font-light">-
-                                    Elevien</span></p>
-                            <div class="arrow-btn arrow-btn--gray">
-                                <img src="./img/arrow-right.svg" alt="">
-                            </div>
+                <li class="box__height">
+                    <div class="cursor-pointer portfolio__box-text">
+                        <p class="text-extra-small text-white mb-4 portfolio__number">03</p>
+                        <h5 class="heading-five text-white">Building (r)evolution of gymnastics which secured a
+                            Є1.600.000 pre seed</h5>
+                        <p class="text-md font-bold text-white my-8 portfolio__tabu">Startup <span class="font-light">-
+                                Elevien</span></p>
+                        <div class="arrow-btn arrow-btn--gray">
+                            <img src="./img/arrow-right.svg" alt="">
                         </div>
                     </div>
+                </li>
 
-                    <div class="box__height">
-                        <div class="cursor-pointer portfolio__box-text">
-                            <p class="text-extra-small text-white mb-4 portfolio__number">04</p>
-                            <h5 class="heading-five text-white">Trackingyour brand's mentions across millions of
-                                websites
-                                and online sources in real time</h5>
-                            <p class="text-md font-bold text-white my-8 portfolio__tabu">Scaleup <span
-                                    class="font-light">-
-                                    Mediatoolkit</span></p>
-                            <div class="arrow-btn arrow-btn--blue">
-                                <img src="./img/arrow-right.svg" alt="">
-                            </div>
+                <li class="box__height">
+                    <div class="cursor-pointer portfolio__box-text">
+                        <p class="text-extra-small text-white mb-4 portfolio__number">04</p>
+                        <h5 class="heading-five text-white">Trackingyour brand's mentions across millions of
+                            websites
+                            and online sources in real time</h5>
+                        <p class="text-md font-bold text-white my-8 portfolio__tabu">Scaleup <span class="font-light">-
+                                Mediatoolkit</span></p>
+                        <div class="arrow-btn arrow-btn--blue">
+                            <img src="./img/arrow-right.svg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="portfolio__img sticky top-0" style="background-image: url('./img/asset\ 12.webp');">
-                    <!-- <img src="./img/asset 23.png" alt=""> -->
-                </div>
+                </li>
+            </ul>
+            <div class="portfolio__img sticky top-0" style="background-image: url('./img/asset\ 12.webp');">
+                <!-- <img src="./img/asset 23.png" alt=""> -->
             </div>
         </div>
     </section>
@@ -176,11 +174,12 @@
         </div>
         <div class="flex pt-20 flex-col md:flex-row gap-4 md:gap-0">
             <div class="venture__text text-primary">
-                <span class="text-extra-small flex gap-4">01<h2 class="heading-two">Product Team</h2>
+                <span class="text-extra-small flex gap-4">01<h2 class="heading-two mt_-6vw">Product Team</h2>
                 </span>
-                <span class="text-extra-small flex gap-4 my-10">02<h2 class="heading-two">Operational Support</h2>
+                <span class="text-extra-small flex gap-4 my-10">02<h2 class="heading-two mt_-6vw">Operational Support
+                    </h2>
                 </span>
-                <span class=" text-extra-small flex gap-4">03<h2 class="heading-two">Investment Network</h2>
+                <span class=" text-extra-small flex gap-4">03<h2 class="heading-two mt_-6vw">Investment Network</h2>
                 </span>
                 <div class="lg:mt-40 mt-20 text-md cursor-pointer font-medium md:w-80 ml-10">
                     <p class="">Co-creating impactful companies by sharing risks and rewards.</p>
@@ -196,39 +195,37 @@
 
         <img src="./img/asset 4.webp" alt="" class="my-40">
 
-        <div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide wrapper--fluid bg-white">
-                        <p class="heading-four text-primary">
-                            “The Bornfight team actively participates in our company development and ideas that we want
-                            to implement. In some segments of our business, they think two or three steps ahead of us.”
-                        </p>
-                        <p class="text-extra-small text-primary font-bold mt-8">Mia Pavelić</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide wrapper--fluid bg-white">
+                    <p class="heading-four text-primary">
+                        “The Bornfight team actively participates in our company development and ideas that we want
+                        to implement. In some segments of our business, they think two or three steps ahead of us.”
+                    </p>
+                    <p class="text-extra-small text-primary font-bold mt-8">Mia Pavelić</p>
 
-                        <p class="text-extra-small text-primary mb-32"> Executive Director, Camping Šimuni</p>
-                    </div>
-                    <div class="swiper-slide wrapper--fluid bg-white">
-                        <p class="heading-four text-primary">
-                            “I see Elevien as a training ground where new generations of athletes will be born.
-                            Digitalization through such platforms, which are not built as a replacement for current
-                            tournament systems, but their improvement, can be the future of gymnastics and many other
-                            sports.”
-                        </p>
-                        <p class="text-extra-small text-primary font-bold mt-8">Marko Pipunić</p>
-
-                        <p class="text-extra-small text-primary mb-20"> Investor, Elevien</p>
-                    </div>
+                    <p class="text-extra-small text-primary mb-32"> Executive Director, Camping Šimuni</p>
                 </div>
+                <div class="swiper-slide wrapper--fluid bg-white">
+                    <p class="heading-four text-primary">
+                        “I see Elevien as a training ground where new generations of athletes will be born.
+                        Digitalization through such platforms, which are not built as a replacement for current
+                        tournament systems, but their improvement, can be the future of gymnastics and many other
+                        sports.”
+                    </p>
+                    <p class="text-extra-small text-primary font-bold mt-8">Marko Pipunić</p>
 
-                <div class="flex items-center arrow-navigation">
-                    <div class="swiper-button-next2">
-                        <img src="./img/arrow-left.svg" alt="">
-                    </div>
-                    <div class="swiper-pagination2 w-auto mx-16 text-primary"></div>
-                    <div class="swiper-button-prev2">
-                        <img src="./img/arrow-right-primary.svg" alt="">
-                    </div>
+                    <p class="text-extra-small text-primary mb-20"> Investor, Elevien</p>
+                </div>
+            </div>
+
+            <div class="flex items-center arrow-navigation">
+                <div class="swiper-button-next2">
+                    <img src="./img/arrow-left.svg" alt="">
+                </div>
+                <div class="swiper-pagination2 w-auto mx-16 text-primary"></div>
+                <div class="swiper-button-prev2">
+                    <img src="./img/arrow-right-primary.svg" alt="">
                 </div>
             </div>
         </div>
@@ -242,11 +239,11 @@
                 <figure class="founder__img order-2 md:order-1">
                     <img src="./img/asset 5.webp" alt="">
                 </figure>
-                <div class="text-white founder__text mt-auto">
+                <div class="text-white founder__text mt-auto order-1 md:order-2">
                     <h4 class="heading-four">
                         How we work with founders
                     </h4>
-                    <p class="text-base my-10 order-1 md:order-2">
+                    <p class="text-base my-10">
                         f we see the potential for long-term growth in your idea, we’ll help you validate it and we’ll
                         invest our team and resources to get it built and scaled. As your company grows, we’ll find and
                         connect you with additional people and investment.
@@ -312,7 +309,8 @@
     <!-- section black -->
     <section class="cursor-pointer invest-section text-white relative">
         <div class="flex">
-            <div class="w-2/4 invest lg:py-40 py-20">
+            <div class="w-2/4 invest lg:py-40 py-20 relative">
+                <div class="bg-image absolute"></div>
                 <h5 class="heading-five font-semibold invest__heading">Portfolio</h5>
                 <p class="text-small md:w-40 invest__description mt-6 mb-10">Take a look at companies we've founded,
                     built,
@@ -320,7 +318,8 @@
                 <p class="expand text-small invest__button">View Portfolio</p>
             </div>
 
-            <div class="w-2/4 invest-second lg:py-40 py-20">
+            <div class="w-2/4 invest-second lg:py-40 py-20 relative">
+                <div class="bg-image absolute"></div>
                 <h5 class="heading-five font-semibold invest-second__heading">What we do</h5>
                 <p class="text-small md:w-48 invest-second__description mt-6 mb-10">See how we can help you take your
                     business from idea to MVP to MRR</p>
@@ -338,9 +337,12 @@
                 <h3 class="heading-three footer__heading">
                     Have an idea? Lets build and scale it!
                 </h3>
-                <div class="flex items-center cursor-pointer btn__group">
-                    <button class="button--arrow"><img src="./img/arrow-right.svg" alt=""></button>
-                    <span class="">Star with us!</span>
+                <div class="flex items-center cursor-pointer btn__group ">
+                    <button class="button--arrow relative overflow-hidden">
+                        <img src="./img/arrow-right.svg" class="absolute arrow-right--one">
+                        <img src="./img/arrow-right.svg" class="absolute arrow-right--two">
+                    </button>
+                    <span class="text-medium">Star with us!</span>
                 </div>
             </div>
             <div class="flex pt-16 flex-col md:flex-row gap-4 md:gap-0">

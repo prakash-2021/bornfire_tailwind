@@ -12,7 +12,6 @@
     &__text {
         max-width: 45%;
         padding-right: 10.8%;
-        padding-top: 10%;
 
         .heading-two {
             margin-bottom: 12.5vh;
@@ -93,7 +92,10 @@
 
 
     .box__height {
-        height: 80vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     &__box-text {
